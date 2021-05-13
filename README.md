@@ -25,6 +25,7 @@ stty rows ** columns **
 + udp socket without connect(thus hide remote ip from netstat)
 + cmd line hide as "ps"(thus hide remote ip from cmd line)
 + use forkpty() to provide a pty terminal
++ (dir /optinal) static compile bash to hide bash from cmd line
 
 # other
 we can also compile a bash staticly and hide its cmd line 
